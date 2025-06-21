@@ -359,7 +359,7 @@
           question: "Which answer isINCORRECTregarding IAM Users?",
           answers: [
             "IAM Users can belong to multiple User Groups",
-            "IAM Users don't have to belong to a User Group",
+            "IAM Users don`t have to belong to a User Group",
             "IAM Policies can be attached directly to IAM Users",
             "IAM Users access AWS services using root account credentials",
           ],
@@ -372,10 +372,10 @@
           answers: [
             "Create several IAM Users for one physical person",
             "Share your AWS account credentials with your colleague, so he can perform a task for you",
-            "Don't use the root user account",
+            "Don`t use the root user account",
             "Do not enable MFA for easier access",
           ],
-          right_answer: "Don't use the root user account",
+          right_answer: "Don`t use the root user account",
           theme: "Correct Answer",
         },
         {
@@ -409,7 +409,7 @@
             "Remove permissions from the root account",
             "Only access AWS services through AWS Command Line Interface (CLI)",
             "Enable Multi-Factor Authentication (MFA)",
-            "Don't create IAM Users, only access your AWS account using the root account",
+            "Don`t create IAM Users, only access your AWS account using the root account",
           ],
           right_answer: "Enable Multi-Factor Authentication (MFA)",
           theme: "Correct Answer",
@@ -540,7 +540,7 @@
         },
         {
           question:
-            "You're planning to migrate on-premises applications to AWS. Your company has strict compliance requirements that require your applications to run on dedicated servers. You also need to use your own server-bound software license to reduce costs. Which EC2 Purchasing Option is suitable for you?",
+            "You`re planning to migrate on-premises applications to AWS. Your company has strict compliance requirements that require your applications to run on dedicated servers. You also need to use your own server-bound software license to reduce costs. Which EC2 Purchasing Option is suitable for you?",
           answers: [
             "Convertible Reserved Instances",
             "Dedicated Hosts",
@@ -563,9 +563,9 @@
         },
         {
           question:
-            "You have just terminated an EC2 instance inus-east-1a, and its attached EBS volume is now available. Your teammate tries to attach it to an EC2 instance inus-east-1bbut he can't. What is a possible cause for this?",
+            "You have just terminated an EC2 instance inus-east-1a, and its attached EBS volume is now available. Your teammate tries to attach it to an EC2 instance inus-east-1bbut he can`t. What is a possible cause for this?",
           answers: [
-            "He's missing IAM permissions",
+            "He`s missing IAM permissions",
             "EBS volumes are locked to an AWS Region",
             "EBS volumes are locked to an Availability Zone",
           ],
@@ -574,7 +574,7 @@
         },
         {
           question:
-            "You have launched an EC2 instance with two EBS volumes, the Root volume type and the other EBS volume type to store the data. A month later you are planning to terminate the EC2 instance. What's the default behavior that will happen to each EBS volume?",
+            "You have launched an EC2 instance with two EBS volumes, the Root volume type and the other EBS volume type to store the data. A month later you are planning to terminate the EC2 instance. What`s the default behavior that will happen to each EBS volume?",
           answers: [
             "Both the root volume type and the EBS volume type will be deleted",
             "The Root volume type will be deleted and the EBS volume type will not be deleted",
@@ -631,7 +631,7 @@
         },
         {
           question:
-            "You would like to have a high-performance local cache for your application hosted on an EC2 instance. You don't mind losing the cache upon the termination of your EC2 instance. Which storage mechanism do you recommend as a Solutions Architect?",
+            "You would like to have a high-performance local cache for your application hosted on an EC2 instance. You don`t mind losing the cache upon the termination of your EC2 instance. Which storage mechanism do you recommend as a Solutions Architect?",
           answers: ["Instance Store", "EBS", "EFS"],
           right_answer: "Instance Store",
           theme: "Correct Answer",
@@ -674,11 +674,11 @@
         },
         {
           question:
-            "You are running a website on 10 EC2 instances fronted by an Elastic Load Balancer. Your users are complaining about the fact that the website always asks them to re-authenticate when they are moving between website pages. You are puzzled because it's working just fine on your machine and in the Dev environment with 1 EC2 instance. What could be the reason?",
+            "You are running a website on 10 EC2 instances fronted by an Elastic Load Balancer. Your users are complaining about the fact that the website always asks them to re-authenticate when they are moving between website pages. You are puzzled because it`s working just fine on your machine and in the Dev environment with 1 EC2 instance. What could be the reason?",
           answers: [
             "The Elastic Load Balancer does not have Sticky Sessions enabled",
             "Your website must have an issue when hosted on multiple EC2 instances",
-            "The EC2 instances log out users as they can't see their IP addresses, instead, they receive ELB IP addresses.",
+            "The EC2 instances log out users as they can`t see their IP addresses, instead, they receive ELB IP addresses.",
           ],
           right_answer:
             "The Elastic Load Balancer does not have Sticky Sessions enabled",
@@ -686,20 +686,20 @@
         },
         {
           question:
-            "You are using an Application Load Balancer to distribute traffic to your website hosted on EC2 instances. It turns out that your website only sees traffic coming from private IPv4 addresses which are in fact your Application Load Balancer's IP addresses. What should you do to get the IP address of clients connected to your website?",
+            "You are using an Application Load Balancer to distribute traffic to your website hosted on EC2 instances. It turns out that your website only sees traffic coming from private IPv4 addresses which are in fact your Application Load Balancer`s IP addresses. What should you do to get the IP address of clients connected to your website?",
           answers: [
-            "Modify your website's frontend so that users send their IP in every request",
-            "Modify your website's backend to get the client IP address fromX-Forwarded-Forheader",
-            "Modify your website's backend to get the client IP address fromX-Forwarded-Portheader",
-            "Modify your website's backend to get the client IP address fromX-Forwarded-Protoheader",
+            "Modify your website`s frontend so that users send their IP in every request",
+            "Modify your website`s backend to get the client IP address fromX-Forwarded-Forheader",
+            "Modify your website`s backend to get the client IP address fromX-Forwarded-Portheader",
+            "Modify your website`s backend to get the client IP address fromX-Forwarded-Protoheader",
           ],
           right_answer:
-            "Modify your website's backend to get the client IP address fromX-Forwarded-Forheader",
+            "Modify your website`s backend to get the client IP address fromX-Forwarded-Forheader",
           theme: "Correct Answer",
         },
         {
           question:
-            "You hosted an application on a set of EC2 instances fronted by an Elastic Load Balancer. A week later, users begin complaining that sometimes the application just doesn't work. You investigate the issue and found that some EC2 instances crash from time to time. What should you do to protect users from connecting to the EC2 instances that are crashing?",
+            "You hosted an application on a set of EC2 instances fronted by an Elastic Load Balancer. A week later, users begin complaining that sometimes the application just doesn`t work. You investigate the issue and found that some EC2 instances crash from time to time. What should you do to protect users from connecting to the EC2 instances that are crashing?",
           answers: [
             "Enable ELB Stickiness",
             "Enable SSL Termination",
@@ -732,11 +732,11 @@
             "Application Load Balancers can route traffic to different Target Groups based on the following,EXCEPT:",
           answers: [
             "Hostname",
-            "Client's Location (Geography)",
+            "Client`s Location (Geography)",
             "Request URL Path",
             "Source IP Address",
           ],
-          right_answer: "Client's Location (Geography)",
+          right_answer: "Client`s Location (Geography)",
           theme: "Correct Answer",
         },
         {
@@ -830,7 +830,7 @@
           question:
             "Your boss asked you to scale your Auto Scaling Group based on the number ofrequests per minuteyour application makes to your database. What should you do?",
           answers: [
-            "You politely tell him it's impossible",
+            "You politely tell him it`s impossible",
             "Create a CloudWatch custom metric then create a CloudWatch Alarm on this metric to scale your ASG",
             "Enable Detailed Monitoring then create a CloudWatch Alarm to scale your ASG",
           ],
@@ -840,15 +840,15 @@
         },
         {
           question:
-            "A web application hosted on a fleet of EC2 instances managed by an Auto Scaling Group. You are exposing this application through an Application Load Balancer. Both the EC2 instances and the ALB are deployed on a VPC with the following CIDR192.168.0.0/18. How do you configure the EC2 instances' security group to ensure only the ALB can access them on port80?",
+            "A web application hosted on a fleet of EC2 instances managed by an Auto Scaling Group. You are exposing this application through an Application Load Balancer. Both the EC2 instances and the ALB are deployed on a VPC with the following CIDR192.168.0.0/18. How do you configure the EC2 instances` security group to ensure only the ALB can access them on port80?",
           answers: [
             "Add an Inbound Rule with port80and0.0.0.0/0as the source",
             "Add an Inbound Rule with port80and192.168.0.0/18as the source",
-            "Add an Inbound Rule with port80and ALB's Security Group as the source",
+            "Add an Inbound Rule with port80and ALB`s Security Group as the source",
             "Load an SSL certificate on the ALB",
           ],
           right_answer:
-            "Add an Inbound Rule with port80and ALB's Security Group as the source",
+            "Add an Inbound Rule with port80and ALB`s Security Group as the source",
           theme: "Correct Answer",
         },
         {
@@ -865,7 +865,7 @@
         },
         {
           question:
-            "Your application hosted on EC2 instances managed by an Auto Scaling Group suddenly receives a spike in traffic which triggers your ASG to scale out and a new EC2 instance has been launched. The traffic continuously increases but the ASG doesn't launch any new EC2 instances immediately but after 5 minutes. What is a possible cause for this behavior?",
+            "Your application hosted on EC2 instances managed by an Auto Scaling Group suddenly receives a spike in traffic which triggers your ASG to scale out and a new EC2 instance has been launched. The traffic continuously increases but the ASG doesn`t launch any new EC2 instances immediately but after 5 minutes. What is a possible cause for this behavior?",
           answers: [
             "Cooldown Period",
             "Lifecycle Hooks",
@@ -883,7 +883,7 @@
         },
         {
           question:
-            "You're planning for a new solution that requires a MySQL database that must be available even in case of a disaster in one of the Availability Zones. What should you use?",
+            "You`re planning for a new solution that requires a MySQL database that must be available even in case of a disaster in one of the Availability Zones. What should you use?",
           answers: [
             "Create Read Replicas",
             "Enable Encryption",
@@ -894,7 +894,7 @@
         },
         {
           question:
-            "We have an RDS database that struggles to keep up with the demand of requests from our website. Our million users mostly read news, and we don't post news very often. Which solution isNOTadapted to this problem?",
+            "We have an RDS database that struggles to keep up with the demand of requests from our website. Our million users mostly read news, and we don`t post news very often. Which solution isNOTadapted to this problem?",
           answers: [
             "An ElastiCache Cluster",
             "RDS Multi-AZ",
@@ -908,11 +908,11 @@
             "You have set up read replicas on your RDS database, but users are complaining that upon updating their social media posts, they do not see their updated posts right away. What is a possible cause for this?",
           answers: [
             "There must be a bug in your application",
-            "Read Replicas have Asynchronous Replication, therefore it's likely your users will only read Eventual Consistency",
+            "Read Replicas have Asynchronous Replication, therefore it`s likely your users will only read Eventual Consistency",
             "You should have setup Multi-AZ instead",
           ],
           right_answer:
-            "Read Replicas have Asynchronous Replication, therefore it's likely your users will only read Eventual Consistency",
+            "Read Replicas have Asynchronous Replication, therefore it`s likely your users will only read Eventual Consistency",
           theme: "Correct Answer",
         },
         {
@@ -924,7 +924,7 @@
         },
         {
           question:
-            "Your application running on a fleet of EC2 instances managed by an Auto Scaling Group behind an Application Load Balancer. Users have to constantly log back in and you don't want to enable Sticky Sessions on your ALB as you fear it will overload some EC2 instances. What should you do?",
+            "Your application running on a fleet of EC2 instances managed by an Auto Scaling Group behind an Application Load Balancer. Users have to constantly log back in and you don`t want to enable Sticky Sessions on your ALB as you fear it will overload some EC2 instances. What should you do?",
           answers: [
             "Use your own custom Load Balancer on EC2 instances instead of using ALB",
             "Store session data in RDS",
@@ -936,7 +936,7 @@
         },
         {
           question:
-            "An analytics application is currently performing its queries against your main production RDS database. These queries run at any time of the day and slow down the RDS database which impacts your users' experience. What should you do to improve the users' experience?",
+            "An analytics application is currently performing its queries against your main production RDS database. These queries run at any time of the day and slow down the RDS database which impacts your users` experience. What should you do to improve the users` experience?",
           answers: [
             "Setup a Read Replica",
             "Setup Multi-AZ",
@@ -986,7 +986,7 @@
         },
         {
           question:
-            "You have migrated the MySQL database from on-premises to RDS. You have a lot of applications and developers interacting with your database. Each developer has an IAM user in the company's AWS account. What is a suitable approach to give access to developers to the MySQL RDS DB instance instead of creating a DB user for each one?",
+            "You have migrated the MySQL database from on-premises to RDS. You have a lot of applications and developers interacting with your database. Each developer has an IAM user in the company`s AWS account. What is a suitable approach to give access to developers to the MySQL RDS DB instance instead of creating a DB user for each one?",
           answers: [
             "Enable IAM Database Authentication",
             "Use Amazon Cognito",
@@ -1012,11 +1012,10 @@
           question: "How do you encrypt an unencrypted RDS DB instance?",
           answers: [
             "Do it straight from AWS Console, select your RDS DB instance, choose Actions then Encrypt using KMS",
-            'Create a snapshot of the unencrypted RDS DB instance, copy the snapshot and tick "Enable encryption", then restore the RDS DB instance from the encrypted snapshot',
+            `Create a snapshot of the unencrypted RDS DB instance, copy the snapshot and tick "Enable encryption", then restore the RDS DB instance from the encrypted snapshot`,
             "Do it straight from AWS Console, after stopping the RDS DB instance",
           ],
-          right_answer:
-            'Create a snapshot of the unencrypted RDS DB instance, copy the snapshot and tick "Enable encryption", then restore the RDS DB instance from the encrypted snapshot',
+          right_answer: `Create a snapshot of the unencrypted RDS DB instance, copy the snapshot and tick "Enable encryption", then restore the RDS DB instance from the encrypted snapshot`,
           theme: "Correct Answer",
         },
         {
@@ -1094,14 +1093,14 @@
         },
         {
           question:
-            "You have an ElastiCache cluster with small cache size, so you want to ensure that only the data that's requested will be loaded into the cluster. Which caching strategy should you use?",
+            "You have an ElastiCache cluster with small cache size, so you want to ensure that only the data that`s requested will be loaded into the cluster. Which caching strategy should you use?",
           answers: ["Write Through", "Lazy Loading", "Time-To-Live (TTL)"],
           right_answer: "Lazy Loading",
           theme: "Correct Answer",
         },
         {
           question:
-            "You're hosting a dynamic website fronted by an ElastiCache Cluster. You have been instructed to keep latency to a minimum for all read requests for every user. Also, writes can take longer to happen. Which caching strategy do you recommend?",
+            "You`re hosting a dynamic website fronted by an ElastiCache Cluster. You have been instructed to keep latency to a minimum for all read requests for every user. Also, writes can take longer to happen. Which caching strategy do you recommend?",
           answers: ["Cache Aside", "Time-To-Live (TTL)", "Write Through"],
           right_answer: "Write Through",
           theme: "Correct Answer",
@@ -1115,14 +1114,14 @@
         },
         {
           question:
-            "You have deployed a new Elastic Beanstalk environment and would like to direct 5% of your production traffic to this new environment. This allows you to monitor for CloudWatch metrics and ensuring that there're no bugs exist with your new environment. Which Route 53 Record type allows you to do so?",
+            "You have deployed a new Elastic Beanstalk environment and would like to direct 5% of your production traffic to this new environment. This allows you to monitor for CloudWatch metrics and ensuring that there`re no bugs exist with your new environment. Which Route 53 Record type allows you to do so?",
           answers: ["Simple", "Weighted", "Latency", "Failover"],
           right_answer: "Weighted",
           theme: "Correct Answer",
         },
         {
           question:
-            "You have updated a Route 53 Record'smyapp.mydomain.comvalue to point to a new Elastic Load Balancer, but it looks like users are still redirected to the old ELB. What is a possible cause for this behavior?",
+            "You have updated a Route 53 Record`smyapp.mydomain.comvalue to point to a new Elastic Load Balancer, but it looks like users are still redirected to the old ELB. What is a possible cause for this behavior?",
           answers: [
             "Because of theAliasrecord",
             "Because of theCNAMErecord",
@@ -1134,7 +1133,7 @@
         },
         {
           question:
-            "You have an application that's hosted in two different AWS Regionsus-west-1andeu-west-2. You want your users to get the best possible user experience by minimizing the response time from application servers to your users. Which Route 53 Routing Policy should you choose?",
+            "You have an application that`s hosted in two different AWS Regionsus-west-1andeu-west-2. You want your users to get the best possible user experience by minimizing the response time from application servers to your users. Which Route 53 Routing Policy should you choose?",
           answers: ["Latency", "Multi Value", "Weighted", "Geolocation"],
           right_answer: "Latency",
           theme: "Correct Answer",
@@ -1180,10 +1179,10 @@
         },
         {
           question:
-            "You have attached an Internet Gateway to your VPC, but your EC2 instances still don't have access to the internet. What isNOTa possible issue?",
+            "You have attached an Internet Gateway to your VPC, but your EC2 instances still don`t have access to the internet. What isNOTa possible issue?",
           answers: [
             "Route Tables are missing entries",
-            "The EC2 instances don't have public IPs",
+            "The EC2 instances don`t have public IPs",
             "The Security Group does not allow traffic in",
             "The NACL does not allow network traffic out",
           ],
@@ -1247,7 +1246,7 @@
         },
         {
           question:
-            "You have a 25 GB file that you're trying to upload to S3 but you're getting errors. What is a possible cause for this?",
+            "You have a 25 GB file that you`re trying to upload to S3 but you`re getting errors. What is a possible cause for this?",
           answers: [
             "The file size limit on S3 is 5 GB",
             "S3 Service in requested AWS Region must be down",
@@ -1259,9 +1258,9 @@
         },
         {
           question:
-            "You're getting errors while trying to create a new S3 bucket nameddev. You're using a new AWS Account with no S3 buckets created before. What is a possible cause for this?",
+            "You`re getting errors while trying to create a new S3 bucket nameddev. You`re using a new AWS Account with no S3 buckets created before. What is a possible cause for this?",
           answers: [
-            "You're missing IAM permissions to create an S3 bucket",
+            "You`re missing IAM permissions to create an S3 bucket",
             "S3 bucket names must be globally unique anddevis already taken",
           ],
           right_answer:
@@ -1284,7 +1283,7 @@
         },
         {
           question:
-            "A company you're working for wants their data stored in S3 to be encrypted. They don't mind the encryption keys stored and managed by AWS, but they want to maintain control over the rotation policy of the encryption keys. You recommend them to use ....................",
+            "A company you`re working for wants their data stored in S3 to be encrypted. They don`t mind the encryption keys stored and managed by AWS, but they want to maintain control over the rotation policy of the encryption keys. You recommend them to use ....................",
           answers: ["SSE-S3", "SSE-KMS", "SSE-C", "Client-Side Encryption"],
           right_answer: "SSE-KMS",
           theme: "Correct Answer",
@@ -1298,7 +1297,7 @@
         },
         {
           question:
-            "You have updated an S3 bucket policy to allow IAM users to read/write files in the S3 bucket, but one of the users complain that he can't perform aPutObjectAPI call. What is a possible cause for this?",
+            "You have updated an S3 bucket policy to allow IAM users to read/write files in the S3 bucket, but one of the users complain that he can`t perform aPutObjectAPI call. What is a possible cause for this?",
           answers: [
             "The S3 bucket policy must be wrong",
             "The user is lacking permissions",
@@ -1311,7 +1310,7 @@
         },
         {
           question:
-            "You have a website that loads files from an S3 bucket. When you try the URL of the files directly in your Chrome browser it works, but when the website you're visiting tries to load these files it doesn't. What's the problem?",
+            "You have a website that loads files from an S3 bucket. When you try the URL of the files directly in your Chrome browser it works, but when the website you`re visiting tries to load these files it doesn`t. What`s the problem?",
           answers: [
             "The Bucket policy is wrong",
             "The IAM policy is wrong",
@@ -1343,7 +1342,7 @@
         },
         {
           question:
-            "You and your colleague are working on an application that's interacting with some AWS services through making API calls. Your colleague can run the application on his machine without issues, while you get API Authorization Exceptions. What should you do?",
+            "You and your colleague are working on an application that`s interacting with some AWS services through making API calls. Your colleague can run the application on his machine without issues, while you get API Authorization Exceptions. What should you do?",
           answers: [
             "Send him your AWS Access Key and Secret Access Key so he can replicate the issue on his machine",
             "Ask him to send you his IAM credentials so you can work without issues",
@@ -1376,11 +1375,11 @@
         },
         {
           question:
-            "You're running an application on an on-premises server. The application needs to perform API calls to an S3 bucket. How can you achieve this in the most secure manner?",
+            "You`re running an application on an on-premises server. The application needs to perform API calls to an S3 bucket. How can you achieve this in the most secure manner?",
           answers: [
             "Create an IAM user to be used by the application, then generate IAM credentials and put the credentials into environment variables",
             "From inside your on-premises server, runaws configureand insert your personal IAM Credentials",
-            "Create an IAM user to be used by the application, then generate IAM credentials and use the credentials in the application's code",
+            "Create an IAM user to be used by the application, then generate IAM credentials and use the credentials in the application`s code",
             "Attach an IAM role to your on-premises server",
           ],
           right_answer:
@@ -1401,7 +1400,7 @@
         },
         {
           question:
-            "You have created an IAM role with the required IAM permissions to make API calls to get sensitive files stored in an S3 bucket. You have attached the newly created IAM role to an EC2 instance and you want to test whether you can download these files from inside the EC2 instance. What should you do to make your tests without changing the parameters' values as they're critical?",
+            "You have created an IAM role with the required IAM permissions to make API calls to get sensitive files stored in an S3 bucket. You have attached the newly created IAM role to an EC2 instance and you want to test whether you can download these files from inside the EC2 instance. What should you do to make your tests without changing the parameters` values as they`re critical?",
           answers: [
             "Use IAM Policy Simulator OR the Instance Metadata",
             "Use--dry-runAWS CLI option OR the Instance Metadata",
@@ -1422,7 +1421,7 @@
           question:
             "While performing EC2 API calls from inside your EC2 instance, you received the following authorization exception:",
           answers: [
-            "Contact AWS Support as they're the only ones who can decode these messages",
+            "Contact AWS Support as they`re the only ones who can decode these messages",
             "Use the EC2decode-authorization-messageAPI call",
             "Use the IAMdecode-authorization-messageAPI call",
             "Use the STSdecode-authorization-messageAPI call",
@@ -1467,7 +1466,7 @@
         },
         {
           question:
-            "AWS CLI and AWS SDKs sign API requests for you using your AWS access key. If you're writing your custom code, you must sign AWS API requests using .........................",
+            "AWS CLI and AWS SDKs sign API requests for you using your AWS access key. If you`re writing your custom code, you must sign AWS API requests using .........................",
           answers: [
             "Signature Version 1 (SigV1)",
             "Signature Version 2 (SigV2)",
@@ -1502,7 +1501,7 @@
         },
         {
           question:
-            "You suspect that some of your employees try to access files in an S3 bucket that they don't have access to. How can you verify this is indeed the case without them noticing?",
+            "You suspect that some of your employees try to access files in an S3 bucket that they don`t have access to. How can you verify this is indeed the case without them noticing?",
           answers: [
             "Restrict their IAM policies and look at CloudTail logs",
             "Use a bucket policy",
@@ -1548,7 +1547,7 @@
         },
         {
           question:
-            "How can you be notified when there's an object uploaded to your S3 bucket?",
+            "How can you be notified when there`s an object uploaded to your S3 bucket?",
           answers: [
             "S3 Select",
             "S3 Access Logs",
@@ -1572,7 +1571,7 @@
         },
         {
           question:
-            "You have an S3 bucket that has S3 Versioning enabled. This S3 bucket has a lot of objects, and you would like to remove old object versions to reduce costs. What's the best approach to automate the deletion of these old object versions?",
+            "You have an S3 bucket that has S3 Versioning enabled. This S3 bucket has a lot of objects, and you would like to remove old object versions to reduce costs. What`s the best approach to automate the deletion of these old object versions?",
           answers: [
             "S3 Lifecycle Rules - Expiration Actions",
             "S3 Lifecycle Rules - Transition Actions",
@@ -1601,7 +1600,7 @@
         },
         {
           question:
-            "While you're uploading large files to an S3 bucket using Multi-part Upload, there are a lot of unfinished parts stored in the S3 bucket due to network issues. You are not using these unfinished parts and they cost you money. What is the best approach to remove these unfinished parts?",
+            "While you`re uploading large files to an S3 bucket using Multi-part Upload, there are a lot of unfinished parts stored in the S3 bucket due to network issues. You are not using these unfinished parts and they cost you money. What is the best approach to remove these unfinished parts?",
           answers: [
             "Use AWS Lambda to loop on each old/unfinished part and delete them",
             "Use an S3 Lifecycle Policy to automate old/unfinished parts deletion",
@@ -1633,7 +1632,7 @@
         },
         {
           question:
-            "You have a large dataset stored on-premises that you want to upload to the S3 bucket. The dataset is divided into 10 GB files. You have good bandwidth but your Internet connection isn't stable. What is the best way to upload this dataset to S3 and ensure that the process is fast and avoid any problems with the Internet connection?",
+            "You have a large dataset stored on-premises that you want to upload to the S3 bucket. The dataset is divided into 10 GB files. You have good bandwidth but your Internet connection isn`t stable. What is the best way to upload this dataset to S3 and ensure that the process is fast and avoid any problems with the Internet connection?",
           answers: [
             "Use S3 Multi-part Upload & S3 Transfer Acceleration",
             "Use S3 Select & Use S3 Transfer Acceleration",
@@ -1726,7 +1725,7 @@
         },
         {
           question:
-            "You are hosting highly dynamic content in an S3 bucket in theus-east-1region. You want to make this data to be available with low latency in Singapore'sap-southeast-1region. What do you recommend?",
+            "You are hosting highly dynamic content in an S3 bucket in theus-east-1region. You want to make this data to be available with low latency in Singapore`sap-southeast-1region. What do you recommend?",
           answers: [
             "Amazon CloudFront",
             "S3 Cross-Region Replication",
@@ -1749,7 +1748,7 @@
         },
         {
           question:
-            "When you're configuring a CloudFront distribution to use Signed URLs/Cookies, it is recommended to use ............................ signer instead of ................................ signer.",
+            "When you`re configuring a CloudFront distribution to use Signed URLs/Cookies, it is recommended to use ............................ signer instead of ................................ signer.",
           answers: [
             "Trusted Key Group, CloudFront Key Pair",
             "CloudFront Key Pair, Trusted Key Group",
@@ -1759,7 +1758,7 @@
         },
         {
           question:
-            "You have multiple Docker-based applications hosted on-premises that you want to migrate to AWS. You don't want to provision or manage any infrastructure, you just want to run your containers on AWS. Which AWS service should you choose?",
+            "You have multiple Docker-based applications hosted on-premises that you want to migrate to AWS. You don`t want to provision or manage any infrastructure, you just want to run your containers on AWS. Which AWS service should you choose?",
           answers: [
             "Elastic Container Service (ECS)",
             "Elastic Container Registry (ECR)",
@@ -1788,7 +1787,7 @@
         },
         {
           question:
-            "You're planning to migrate a WordPress website running on Docker containers from on-premises to AWS. You have decided to run the application in an ECS Cluster, but you want your Docker containers to access the same WordPress website content such as website files, images, videos, etc. What do you recommend to achieve this?",
+            "You`re planning to migrate a WordPress website running on Docker containers from on-premises to AWS. You have decided to run the application in an ECS Cluster, but you want your Docker containers to access the same WordPress website content such as website files, images, videos, etc. What do you recommend to achieve this?",
           answers: [
             "Mount an EFS volume",
             "Mount an EBS volume",
@@ -1872,9 +1871,9 @@
         },
         {
           question:
-            "You have a containerized application stored as Docker images in an ECR repository, that you want to run on an ECS cluster. You're trying to launch two copies of the same Docker container on the same EC2 container instance. The first container successfully starts, but the second container doesn't. You have checked that there's enough CPU and RAM on the EC2 container instance. What is the problem here?",
+            "You have a containerized application stored as Docker images in an ECR repository, that you want to run on an ECS cluster. You`re trying to launch two copies of the same Docker container on the same EC2 container instance. The first container successfully starts, but the second container doesn`t. You have checked that there`s enough CPU and RAM on the EC2 container instance. What is the problem here?",
           answers: [
-            "The EC2 container instance doesn't have the required IAM permissions to fetch Docker images from the ECR repository",
+            "The EC2 container instance doesn`t have the required IAM permissions to fetch Docker images from the ECR repository",
             "The host port defined in the task definition",
             "The container port defined in the task definition",
             "EC2 container instances can only run one container instance for each Docker image",
@@ -1884,10 +1883,10 @@
         },
         {
           question:
-            "A newly launched EC2 container instance can't be registered with your ECS cluster. What isNOTa reason for this issue?",
+            "A newly launched EC2 container instance can`t be registered with your ECS cluster. What isNOTa reason for this issue?",
           answers: [
             "The ECS agent is not running",
-            "The AMI used isn't the Amazon ECS-optimized AMI",
+            "The AMI used isn`t the Amazon ECS-optimized AMI",
             "The EC2 container instance is missing IAM permissions",
             "The security group on the EC2 instance does not allow inbound traffic",
           ],
@@ -1936,7 +1935,7 @@
         },
         {
           question:
-            "You're developing an application and would like to deploy it to Elastic Beanstalk with minimal cost. You should run it in ..................",
+            "You`re developing an application and would like to deploy it to Elastic Beanstalk with minimal cost. You should run it in ..................",
           answers: ["Single Instance Mode", "High Availability Mode"],
           right_answer: "Single Instance Mode",
           theme: "Correct Answer",
@@ -1970,7 +1969,7 @@
         },
         {
           question:
-            "You are developing a new application that's hosted on Elastic Beanstalk. As you are in the development process you don't mind downtime so you want your application to be deployed as soon as a new version is available. Which Elastic Beanstalk deployment option should you use?",
+            "You are developing a new application that`s hosted on Elastic Beanstalk. As you are in the development process you don`t mind downtime so you want your application to be deployed as soon as a new version is available. Which Elastic Beanstalk deployment option should you use?",
           answers: [
             "All At Once",
             "Rolling",
@@ -1982,7 +1981,7 @@
         },
         {
           question:
-            "A company hosting their website on AWS Elastic Beanstalk. They want a methodology to continuously release new application versions with the ability to roll back very quickly in case if there're any issues. Also, the application must be running at full capacity while releasing new versions. Which Elastic Beanstalk deployment option do you recommend?",
+            "A company hosting their website on AWS Elastic Beanstalk. They want a methodology to continuously release new application versions with the ability to roll back very quickly in case if there`re any issues. Also, the application must be running at full capacity while releasing new versions. Which Elastic Beanstalk deployment option do you recommend?",
           answers: [
             "All At Once",
             "Rolling",
@@ -1994,7 +1993,7 @@
         },
         {
           question:
-            "You're a DevOps engineer working for a startup company hosting their application on Elastic Beanstalk. The application is in its early phases and it has a lot of new updates every week while being used by a number of users. You want to continuously release new features without application downtime and without incurring extra costs. It's acceptable to temporarily decrease the number of running instances serving users. Which Elastic Beanstalk deployment option should you choose?",
+            "You`re a DevOps engineer working for a startup company hosting their application on Elastic Beanstalk. The application is in its early phases and it has a lot of new updates every week while being used by a number of users. You want to continuously release new features without application downtime and without incurring extra costs. It`s acceptable to temporarily decrease the number of running instances serving users. Which Elastic Beanstalk deployment option should you choose?",
           answers: [
             "All At Once",
             "Rolling",
@@ -2080,7 +2079,7 @@
         },
         {
           question:
-            "You're using Elastic Beanstalk and you would like to schedule tasks to run periodically and asynchronously. These tasks typically take more than 1 hour to complete. Which Elastic Beanstalk environment should you choose?",
+            "You`re using Elastic Beanstalk and you would like to schedule tasks to run periodically and asynchronously. These tasks typically take more than 1 hour to complete. Which Elastic Beanstalk environment should you choose?",
           answers: [
             "Web Server environment and a.ebextensionsfile",
             "Web Server environment and acron.yamlfile",
@@ -2104,7 +2103,7 @@
         },
         {
           question:
-            "You're running an application on Elastic Beanstalk. You have just finished a major update to your application. You want to deploy the new version then direct a small percentage of traffic to the new version so you can test and fall back if there're any issues. Which Elastic Beanstalk deployment option should you choose?",
+            "You`re running an application on Elastic Beanstalk. You have just finished a major update to your application. You want to deploy the new version then direct a small percentage of traffic to the new version so you can test and fall back if there`re any issues. Which Elastic Beanstalk deployment option should you choose?",
           answers: [
             "Traffic Splitting",
             "Rolling",
@@ -2116,7 +2115,7 @@
         },
         {
           question:
-            "You have been hired by a company to run some tests on their application hosted on Elastic Beanstalk. You can't run these tests on the current environment as this is the production environment, so you have to create another environment similar to the one already running. Which Elastic Beanstalk feature allows you to do this?",
+            "You have been hired by a company to run some tests on their application hosted on Elastic Beanstalk. You can`t run these tests on the current environment as this is the production environment, so you have to create another environment similar to the one already running. Which Elastic Beanstalk feature allows you to do this?",
           answers: [
             "Download the current Elastic Beanstalk environment CloudFormation template, then use it to create another environment",
             "Manually create another environment with the same configuration",
@@ -2198,7 +2197,7 @@
         },
         {
           question:
-            "You're using CodeCommit as your code repository where developers push code changes to it. To prevent developers from committing any secret credentials, you want to automatically trigger code analysis after each commit. How can you achieve this?",
+            "You`re using CodeCommit as your code repository where developers push code changes to it. To prevent developers from committing any secret credentials, you want to automatically trigger code analysis after each commit. How can you achieve this?",
           answers: [
             "Setup AWS CloudWatch Events in CodeCommit",
             "Setup AWS SNS / Lambda integration in CodeCommit",
@@ -2291,7 +2290,7 @@
         },
         {
           question:
-            "You're using CodeBuild to build your application as part of the CICD process. The build process takes a long time, so you investigated this and found that 15 minutes at each build is spent on pulling dependencies from remote repositories. What should you do to drastically speed up the build process?",
+            "You`re using CodeBuild to build your application as part of the CICD process. The build process takes a long time, so you investigated this and found that 15 minutes at each build is spent on pulling dependencies from remote repositories. What should you do to drastically speed up the build process?",
           answers: [
             "Embed dependencies into the code",
             "Modify thebuildspec.ymlto enable Dependencies Caching in Amazon S3",
@@ -2314,7 +2313,7 @@
         },
         {
           question:
-            "What's the proper order of Lifecycle Events in CodeDeploy for an EC2/on-premises deployment?",
+            "What`s the proper order of Lifecycle Events in CodeDeploy for an EC2/on-premises deployment?",
           answers: [
             "ApplicationStop, BeforeInstall, Install, AfterInstall, DownloadBundle, ApplicationStart, ValidateService",
             "ValidateService, ApplicationStop, ApplicationStart, DownloadBundle, BeforeInstall, Install, AfterInstall",
@@ -2339,19 +2338,19 @@
         },
         {
           question:
-            "You manage a fleet of EC2 and on-premises instances where you're trying to run your first deployment using AWS CodeDeploy, but it doesn't work. Which of the following could be a possible cause?",
+            "You manage a fleet of EC2 and on-premises instances where you`re trying to run your first deployment using AWS CodeDeploy, but it doesn`t work. Which of the following could be a possible cause?",
           answers: [
-            "You've probably forgotten to install and start the CodeDeploy agent on the instances",
-            "CodeDeploy doesn't work with on-premises instances",
-            "You've forgotten to allow inbound traffic on the CodeDeploy service's security group",
+            "You`ve probably forgotten to install and start the CodeDeploy agent on the instances",
+            "CodeDeploy doesn`t work with on-premises instances",
+            "You`ve forgotten to allow inbound traffic on the CodeDeploy service`s security group",
           ],
           right_answer:
-            "You've probably forgotten to install and start the CodeDeploy agent on the instances",
+            "You`ve probably forgotten to install and start the CodeDeploy agent on the instances",
           theme: "Correct Answer",
         },
         {
           question:
-            "You would like to have a one-stop dashboard for all the CICD needs for all of your projects. You don't need heavy control of the individual configuration for all the components in your CICD, but need to be able to get a holistic view of your projects. Which AWS service do you recommend?",
+            "You would like to have a one-stop dashboard for all the CICD needs for all of your projects. You don`t need heavy control of the individual configuration for all the components in your CICD, but need to be able to get a holistic view of your projects. Which AWS service do you recommend?",
           answers: [
             "AWS CodeBuild",
             "AWS CodePipeline",
@@ -2363,7 +2362,7 @@
         },
         {
           question:
-            "CodeBuild containers are run outside of a VPC and it's impossible to connect to resources in your VPC.",
+            "CodeBuild containers are run outside of a VPC and it`s impossible to connect to resources in your VPC.",
           answers: ["True", "False"],
           right_answer: "False",
           theme: "Correct Answer",
@@ -2440,7 +2439,7 @@
             "You have 2 CloudFormation templates. Template A contains the networking components (VPC, Subnets, SGs, ...) and template B contains the application infrastructure (EC2 instances, ALB, EBS, ...). You want to attach the SGs in template A to the EC2 instances in template B. How would you achieve this task?",
           answers: [
             "Export the SGs Ids in the Outputs section from template A, then import exported values in template B usingFn::ImportValue",
-            "You can't do this. You have to merge template A and template B in one template",
+            "You can`t do this. You have to merge template A and template B in one template",
             "Write a Lambda function that takes Security Groups IDs from template A and injects them into template B",
           ],
           right_answer:
@@ -2506,7 +2505,7 @@
         {
           question: "What is wrong with the following CloudFormation template?",
           answers: [
-            "The parameterAWS::Regionis missing so!Ref 'AWS::Region'won't work",
+            "The parameterAWS::Regionis missing so!Ref `AWS::Region`won`t work",
             "The!FindInMapfunction is using the wrong syntax. It should have only 2 arguments",
             "The parameterEnvironmentNameis missing",
             "You can not define two mappings in a template",
@@ -2535,10 +2534,10 @@
         },
         {
           question:
-            "You're trying to delete a CloudFormation stack, but you can't because other CloudFormation stacks reference its exported outputs. What should you do?",
+            "You`re trying to delete a CloudFormation stack, but you can`t because other CloudFormation stacks reference its exported outputs. What should you do?",
           answers: [
             "Contact AWS Support to help you resolve this issue",
-            "You're stuck!!",
+            "You`re stuck!!",
             "First, you need to delete the other CloudFormation stacks that reference the exported outputs, then delete it",
           ],
           right_answer:
@@ -2547,7 +2546,7 @@
         },
         {
           question:
-            "You're trying to create an exported output, but you receive the following errorSSHSecurityGroup output already exist. What is a possible cause for this error?",
+            "You`re trying to create an exported output, but you receive the following errorSSHSecurityGroup output already exist. What is a possible cause for this error?",
           answers: [
             "Exported output names must be unique within your region",
             "The syntax is wrong",
@@ -2577,7 +2576,7 @@
         },
         {
           question:
-            "You have an RDS DB instance that's configured to push its database logs to CloudWatch. You want to create a CloudWatch alarm if there's anErrorfound in the logs. How would you do that?",
+            "You have an RDS DB instance that`s configured to push its database logs to CloudWatch. You want to create a CloudWatch alarm if there`s anErrorfound in the logs. How would you do that?",
           answers: [
             "Create a CloudWatch Logs Metric Filter that filter the logs for the keywordError, then create a CloudWatch Alarm based on that Metric Filter",
             "Create a scheduled CloudWatch Event that triggers an AWS Lambda every 1 hour, scans the logs, and notify you through SNS topic",
@@ -2651,7 +2650,7 @@
         },
         {
           question:
-            "One of your teammates terminated an EC2 instance 4 months ago which has critical data. You don't know who made this so you are going to review all API calls within this period using CloudTrail. You already have CloudTrail set up and configured to send logs to the S3 bucket. What should you do to find out who made this?",
+            "One of your teammates terminated an EC2 instance 4 months ago which has critical data. You don`t know who made this so you are going to review all API calls within this period using CloudTrail. You already have CloudTrail set up and configured to send logs to the S3 bucket. What should you do to find out who made this?",
           answers: [
             "Use CloudTrail Event History in CloudTrail Console",
             "Analyze CloudTrail logs in S3 bucket using Amazon Athena",
@@ -2680,7 +2679,7 @@
         },
         {
           question:
-            "You want to continuously monitor RAM usage for an application hosted on an EC2 instance. By default, CloudWatch doesn't push RAM usage, so you will use a CloudWatch custom metric. Which API call allows you to push custom metric data to CloudWatch?",
+            "You want to continuously monitor RAM usage for an application hosted on an EC2 instance. By default, CloudWatch doesn`t push RAM usage, so you will use a CloudWatch custom metric. Which API call allows you to push custom metric data to CloudWatch?",
           answers: [
             "SendMetricData",
             "PutCustomMetric",
@@ -2706,11 +2705,11 @@
         },
         {
           question:
-            "You have configured your application to use X-Ray to trace and troubleshoot your application requests. Your application traces appear in X-Ray when you run the application on your laptop, but it doesn't appear when you deploy the application to Elastic Beanstalk. What is possible a cause for this issue?",
+            "You have configured your application to use X-Ray to trace and troubleshoot your application requests. Your application traces appear in X-Ray when you run the application on your laptop, but it doesn`t appear when you deploy the application to Elastic Beanstalk. What is possible a cause for this issue?",
           answers: [
             "A config file.ebextensions/xray-daemon.configis missing in your code",
             "You need to give your application the required IAM permissions from the X-Ray Console",
-            "You haven't configured your code correctly",
+            "You haven`t configured your code correctly",
           ],
           right_answer:
             "A config file.ebextensions/xray-daemon.configis missing in your code",
@@ -2718,7 +2717,7 @@
         },
         {
           question:
-            "You have configured your application to use X-Ray to trace and troubleshoot your application requests. Your application traces appear in X-Ray when you run the application on your laptop, but it doesn't appear when you deploy the application to an EC2 instance using AWS CodeDeploy. What is possible a cause for this issue?",
+            "You have configured your application to use X-Ray to trace and troubleshoot your application requests. Your application traces appear in X-Ray when you run the application on your laptop, but it doesn`t appear when you deploy the application to an EC2 instance using AWS CodeDeploy. What is possible a cause for this issue?",
           answers: [
             "The CodeDeployappspec.ymlfile breaks the X-Ray integration. It is a well-known bug",
             "The X-Ray daemon is not running on the EC2 instance",
@@ -2729,19 +2728,19 @@
         },
         {
           question:
-            "You have configured your application to use X-Ray to trace and troubleshoot your application requests. Your application traces appear in X-Ray when you run the application on your laptop, but it doesn't appear when you deploy the application to an EC2 instance using AWS CodeDeploy. After investigation, you confirmed that the X-Ray Daemon is up and running on the EC2 instance. What is possible a cause for this issue?",
+            "You have configured your application to use X-Ray to trace and troubleshoot your application requests. Your application traces appear in X-Ray when you run the application on your laptop, but it doesn`t appear when you deploy the application to an EC2 instance using AWS CodeDeploy. After investigation, you confirmed that the X-Ray Daemon is up and running on the EC2 instance. What is possible a cause for this issue?",
           answers: [
-            "The IAM role attached to your EC2 instance doesn't have the required permissions to send data to X-Ray",
+            "The IAM role attached to your EC2 instance doesn`t have the required permissions to send data to X-Ray",
             "You need to enable inbound UDP traffic to your EC2 instance",
             "Your EC2 instance needs to be running in an Auto Scaling Group",
           ],
           right_answer:
-            "The IAM role attached to your EC2 instance doesn't have the required permissions to send data to X-Ray",
+            "The IAM role attached to your EC2 instance doesn`t have the required permissions to send data to X-Ray",
           theme: "Correct Answer",
         },
         {
           question:
-            "You're using CodePipeline to deploy your application to an Elastic Beanstalk. All of a sudden, the CodePipeline breaks with an error states that it can't find the target Elastic Beanstalk environment. What should you do to find who deleted this Elastic Beanstalk environment?",
+            "You`re using CodePipeline to deploy your application to an Elastic Beanstalk. All of a sudden, the CodePipeline breaks with an error states that it can`t find the target Elastic Beanstalk environment. What should you do to find who deleted this Elastic Beanstalk environment?",
           answers: [
             "Check CloudFormation stacks for deletions",
             "Check CodePipeline for any changes",
@@ -2866,7 +2865,7 @@
         },
         {
           question:
-            "You have 3 different applications that you'd like to send them the same message. All 3 applications are using SQS. What is the best approach would you choose?",
+            "You have 3 different applications that you`d like to send them the same message. All 3 applications are using SQS. What is the best approach would you choose?",
           answers: [
             "Use SQS Replication Feature",
             "Use SNS + SQS Fan Out Pattern",
@@ -2888,10 +2887,10 @@
         },
         {
           question:
-            "You have a website where you want to analyze clickstream data such as the sequence of clicks a user makes, the amount of time a user spends, and where the navigation begins, and how it ends. You decided to use Amazon Kinesis, so you have configured the website to send these clickstream data all the way to a Kinesis data stream. While you checking the data sent to your Kinesis data stream, you found that the users' data is not ordered and the data for one individual user is spread across many shards. How would you fix this problem?",
+            "You have a website where you want to analyze clickstream data such as the sequence of clicks a user makes, the amount of time a user spends, and where the navigation begins, and how it ends. You decided to use Amazon Kinesis, so you have configured the website to send these clickstream data all the way to a Kinesis data stream. While you checking the data sent to your Kinesis data stream, you found that the users` data is not ordered and the data for one individual user is spread across many shards. How would you fix this problem?",
           answers: [
             "There are too many shards, you should only use 1 shard",
-            "You shouldn't use multiple consumers, only one and it should re-order data",
+            "You shouldn`t use multiple consumers, only one and it should re-order data",
             "For each record sent to Kinesis add a partition key that represents the identity of the user",
           ],
           right_answer:
@@ -3022,14 +3021,14 @@
         },
         {
           question:
-            "A Kinesis Data Stream that you manage experiencing an increase in traffic due to a sale day. Your Kinesis Data Streams currently has 6 shards, and you have been asked to split shards to become 10 shards. You have been using a consuming application based on Kinesis Client Library (KCL) and are running on a set of EC2 instances. What's the maximum number of EC2 instances that can be deployed to process the messages in shards?",
+            "A Kinesis Data Stream that you manage experiencing an increase in traffic due to a sale day. Your Kinesis Data Streams currently has 6 shards, and you have been asked to split shards to become 10 shards. You have been using a consuming application based on Kinesis Client Library (KCL) and are running on a set of EC2 instances. What`s the maximum number of EC2 instances that can be deployed to process the messages in shards?",
           answers: ["1", "6", "10", "20"],
           right_answer: "10",
           theme: "Correct Answer",
         },
         {
           question:
-            "You are running an SQS FIFO queue with 10 message groups (defined byMessageGroupID). What's the maximum number of consumers can consume simultaneously?",
+            "You are running an SQS FIFO queue with 10 message groups (defined byMessageGroupID). What`s the maximum number of consumers can consume simultaneously?",
           answers: ["1", "10", "20", "Infinite"],
           right_answer: "10",
           theme: "Correct Answer",
@@ -3043,15 +3042,15 @@
         },
         {
           question:
-            "You have a Kinesis Data Stream where you intermittently get aProvisionedThroughputExceededExceptionexception in your producers' applications. The following can be used to resolve the error,EXCEPT.......................",
+            "You have a Kinesis Data Stream where you intermittently get aProvisionedThroughputExceededExceptionexception in your producers` applications. The following can be used to resolve the error,EXCEPT.......................",
           answers: [
             "Use a highly distributed partition key",
             "Retry with exponential backoff",
-            "Contact AWS Support to increase your Kinesis Data Stream's capacity",
+            "Contact AWS Support to increase your Kinesis Data Stream`s capacity",
             "Add more shards",
           ],
           right_answer:
-            "Contact AWS Support to increase your Kinesis Data Stream's capacity",
+            "Contact AWS Support to increase your Kinesis Data Stream`s capacity",
           theme: "Correct Answer",
         },
         {
@@ -3078,11 +3077,10 @@
           theme: "Correct Answer",
         },
         {
-          question:
-            'You have created a Lambda function that typically will take around 1 hour to process some data. The code works fine when you run it locally on your machine, but when you invoke the Lambda function it fails with a"timeout"error after 3 seconds. What should you do?',
+          question: `You have created a Lambda function that typically will take around 1 hour to process some data. The code works fine when you run it locally on your machine, but when you invoke the Lambda function it fails with a"timeout"error after 3 seconds. What should you do?`,
           answers: [
-            "Configure your Lambda's timeout to 25 minutes",
-            "Configure your Lambda's memory to 10 GB",
+            "Configure your Lambda`s timeout to 25 minutes",
+            "Configure your Lambda`s memory to 10 GB",
             "Run your code somewhere else (e.g., EC2 instance)",
           ],
           right_answer: "Run your code somewhere else (e.g., EC2 instance)",
@@ -3090,18 +3088,18 @@
         },
         {
           question:
-            "Which of the following is the best way to inject a dynamicDB_URLvariable into your Lambda function's code?",
+            "Which of the following is the best way to inject a dynamicDB_URLvariable into your Lambda function`s code?",
           answers: [
-            "Use Lambda's Environment Variables",
+            "Use Lambda`s Environment Variables",
             "Place it in the code and create azipfile",
             "Place it in the code itself",
           ],
-          right_answer: "Use Lambda's Environment Variables",
+          right_answer: "Use Lambda`s Environment Variables",
           theme: "Correct Answer",
         },
         {
           question:
-            "A Lambda function that's invoked asynchronously, fails to process from time to time after 3 retries. To troubleshoot the issue, you would like to collect and analyze these events later on. What is the best practice you can do?",
+            "A Lambda function that`s invoked asynchronously, fails to process from time to time after 3 retries. To troubleshoot the issue, you would like to collect and analyze these events later on. What is the best practice you can do?",
           answers: [
             "Add logging statements for all events in your Lambda function, then filter CloudWatch Logs",
             "Invoke your function synchronously",
@@ -3113,26 +3111,26 @@
         },
         {
           question:
-            "You have enabled a Dead Letter Queue (DLQ) for your Lambda function and configured it to send failed messages to SNS. While testing, you don't see any events there even though you can tell from CloudWatch metrics that you have failures. What is most likely the reason for this?",
+            "You have enabled a Dead Letter Queue (DLQ) for your Lambda function and configured it to send failed messages to SNS. While testing, you don`t see any events there even though you can tell from CloudWatch metrics that you have failures. What is most likely the reason for this?",
           answers: [
             "AWS SNS is having outages",
-            "Your Lambda function's execution role is missing permissions",
-            "You should use SQS instead, there's no Lambda DLQ for SNS",
+            "Your Lambda function`s execution role is missing permissions",
+            "You should use SQS instead, there`s no Lambda DLQ for SNS",
           ],
           right_answer:
-            "Your Lambda function's execution role is missing permissions",
+            "Your Lambda function`s execution role is missing permissions",
           theme: "Correct Answer",
         },
         {
           question:
-            "You have enabled X-Ray integration on your Lambda function but it doesn't work. What is a possible cause for this?",
+            "You have enabled X-Ray integration on your Lambda function but it doesn`t work. What is a possible cause for this?",
           answers: [
-            "Check IAM permissions in your Lambda function's execution role",
+            "Check IAM permissions in your Lambda function`s execution role",
             "You need to run the X-Ray daemon as a dependency in your deployment package",
             "You need to open a ticket with AWS Support",
           ],
           right_answer:
-            "Check IAM permissions in your Lambda function's execution role",
+            "Check IAM permissions in your Lambda function`s execution role",
           theme: "Correct Answer",
         },
         {
@@ -3151,7 +3149,7 @@
           question:
             "A Lambda function makes requests to 3rd party API. To successfully make the requests, the 3rd party API requires you to send a token which is a long string of 8 KB. Where should you place this token?",
           answers: [
-            "Place it in the Lambda function's environment variables",
+            "Place it in the Lambda function`s environment variables",
             "Place it in the deployment package.zipfile",
           ],
           right_answer: "Place it in the deployment package.zipfile",
@@ -3171,7 +3169,7 @@
         },
         {
           question:
-            "You have updated a Lambda function and created a new version. Now, you want to test out the new version and ensure it can sustain production traffic. You are risk-averse and don't want to take down your whole application. What should you do?",
+            "You have updated a Lambda function and created a new version. Now, you want to test out the new version and ensure it can sustain production traffic. You are risk-averse and don`t want to take down your whole application. What should you do?",
           answers: [
             "Create a new Lambda function and test there",
             "Use Lambda Aliases, and point to the new and old versions, then assign weights",
@@ -3184,7 +3182,7 @@
           question:
             "You have a Lambda function used to retrieve data from an RDS DB instance. Each time the Lambda function is invoked, it establishes a new connection to your database. These connections make a load on your database and degrade its performance. So, you tell your developers to use long-lived database connections. They tell you that .......................................",
           answers: [
-            "It's impossible, AWS Lambda containers are created and destroyed every time they are called",
+            "It`s impossible, AWS Lambda containers are created and destroyed every time they are called",
             "They will move the database connection object outside of the function handler",
             "They will use an ElastiCache cluster to proxy requests to the RDS DB instance",
           ],
@@ -3274,7 +3272,7 @@
         },
         {
           question:
-            "You have enabled and configured Event Notifications in your S3 bucket to invoke a Lambda function every time an object is uploaded to your S3 bucket. You have noticed that there's duplicate logging into CloudWatch Logs with the same request ID. What do you think is the reason for this?",
+            "You have enabled and configured Event Notifications in your S3 bucket to invoke a Lambda function every time an object is uploaded to your S3 bucket. You have noticed that there`s duplicate logging into CloudWatch Logs with the same request ID. What do you think is the reason for this?",
           answers: [
             "The Lambda function has failed and retries have happened",
             "The S3 bucket invoked your Lambda function too many times",
@@ -3341,7 +3339,7 @@
         },
         {
           question:
-            "You have a CloudFormation template that declares a Lambda function. The Lambda function's code is stored in an S3 bucket with Versioning enabled. You useS3Bucket,S3Key, andS3ObjectVersionin the CloudFormation template to reference the code. You have updated the Lambda function's code then uploaded it to S3, but the function hasn't been updated. What should you do?",
+            "You have a CloudFormation template that declares a Lambda function. The Lambda function`s code is stored in an S3 bucket with Versioning enabled. You useS3Bucket,S3Key, andS3ObjectVersionin the CloudFormation template to reference the code. You have updated the Lambda function`s code then uploaded it to S3, but the function hasn`t been updated. What should you do?",
           answers: [
             "UpdateS3Bucketto reference the updated code",
             "UpdateS3Keyto reference the updated code",
@@ -3352,7 +3350,7 @@
         },
         {
           question:
-            "Which of the following Lambda features canNOTbe used to create a custom runtime if it isn't natively supported by AWS Lambda?",
+            "Which of the following Lambda features canNOTbe used to create a custom runtime if it isn`t natively supported by AWS Lambda?",
           answers: [
             "Lambda Layers",
             "Lambda Destinations",
@@ -3363,7 +3361,7 @@
         },
         {
           question:
-            "You are using CodeDeploy for automated deployments to your Lambda function. You updated your Lambda function's code and want to deploy the new version, test it with a small amount of traffic, then totally shift to the new version. Which CodeDeploy deployment type do you recommend?",
+            "You are using CodeDeploy for automated deployments to your Lambda function. You updated your Lambda function`s code and want to deploy the new version, test it with a small amount of traffic, then totally shift to the new version. Which CodeDeploy deployment type do you recommend?",
           answers: ["Linear", "AllAtOnce", "Canary"],
           right_answer: "Canary",
           theme: "Correct Answer",
@@ -3437,7 +3435,7 @@
         },
         {
           question:
-            "When your DynamoDB table's Primary Key is a combination of Partition Key + Sort Key, then ...................... must be unique.",
+            "When your DynamoDB table`s Primary Key is a combination of Partition Key + Sort Key, then ...................... must be unique.",
           answers: ["Partition Key + Sort Key", "Partition Key"],
           right_answer: "Partition Key + Sort Key",
           theme: "Correct Answer",
@@ -3472,11 +3470,11 @@
         },
         {
           question:
-            "An application begins to receive a lot ofProvisionedThroughputExceededExceptionexceptions from a DynamoDB table that you manage. After checking the CloudWatch metrics, you found that you haven't exceeded the total provisioned RCU. What is a possible cause for this?",
+            "An application begins to receive a lot ofProvisionedThroughputExceededExceptionexceptions from a DynamoDB table that you manage. After checking the CloudWatch metrics, you found that you haven`t exceeded the total provisioned RCU. What is a possible cause for this?",
           answers: [
             "Everything is good, just the CloudWatch metrics are slow to update",
             "You have a Hot Partition / Hot Key",
-            "There's a bug in the application's code",
+            "There`s a bug in the application`s code",
           ],
           right_answer: "You have a Hot Partition / Hot Key",
           theme: "Correct Answer",
@@ -3517,7 +3515,7 @@
         },
         {
           question:
-            "You would like to make aQueryto a DynamoDB table using an attribute that'sNOTpart of your table's Primary Key. What should you do to make this query efficient?",
+            "You would like to make aQueryto a DynamoDB table using an attribute that`sNOTpart of your table`s Primary Key. What should you do to make this query efficient?",
           answers: [
             "Nothing, Query supports non-key attributes",
             "Create a Local Secondary Index",
@@ -3528,7 +3526,7 @@
         },
         {
           question:
-            "You are working on designing a new DynamoDB table where you want to make aQueryusing an attribute that'sNOTpart of your table's Primary Key. You need to use the>=predicate while keeping the same Partition Key. What should you do to make this query efficient?",
+            "You are working on designing a new DynamoDB table where you want to make aQueryusing an attribute that`sNOTpart of your table`s Primary Key. You need to use the>=predicate while keeping the same Partition Key. What should you do to make this query efficient?",
           answers: [
             "Nothing, Use Query as is",
             "Create a Local Secondary Index",
@@ -3558,7 +3556,7 @@
         },
         {
           question:
-            "You have an application running for over a year now using a DynamoDB table, with Provisioned RCUs and WCUs, without any throttling issues. There's a requirement for your table to support second type of queries, so you have decided to use the existing Local Secondary Index (LSI) and create a new Global Secondary Index (GSI) to support these queries. One month later, the table begins to experience throttling issues. After checking the table's CloudWatch metrics, you found that you haven't exceeded the table's Provisioned RCU and WCU. What should you do?",
+            "You have an application running for over a year now using a DynamoDB table, with Provisioned RCUs and WCUs, without any throttling issues. There`s a requirement for your table to support second type of queries, so you have decided to use the existing Local Secondary Index (LSI) and create a new Global Secondary Index (GSI) to support these queries. One month later, the table begins to experience throttling issues. After checking the table`s CloudWatch metrics, you found that you haven`t exceeded the table`s Provisioned RCU and WCU. What should you do?",
           answers: [
             "The LSI is throttling so you need to provision more RCU and WCU to the LSI",
             "Adding both an LSI and a GSI to a table is not recommended by AWS best practices as this is a known cause for creating throttles",
@@ -3583,7 +3581,7 @@
         },
         {
           question:
-            "Which of the following AWS CLI options allows you to retrieve a subset of the item's attributes coming from a DynamoDBScanoperation?",
+            "Which of the following AWS CLI options allows you to retrieve a subset of the item`s attributes coming from a DynamoDBScanoperation?",
           answers: [
             "—filter-expression",
             "—page-size",
@@ -3595,7 +3593,7 @@
         },
         {
           question:
-            "You would like to paginate the results of a DynamoDBScanoperation in order to minimize the number of items returned in the CLI's output. Which of the following AWS CLI options should you use?",
+            "You would like to paginate the results of a DynamoDBScanoperation in order to minimize the number of items returned in the CLI`s output. Which of the following AWS CLI options should you use?",
           answers: [
             "—page-size & —max-items",
             "—page-size & —starting-token",
@@ -3630,7 +3628,7 @@
         },
         {
           question:
-            "You have configured a DynamoDB table with a TTL attribute to delete expired user's sessions, but you noticed that some expired items still exist in queries you make. What should you do to resolve this problem?",
+            "You have configured a DynamoDB table with a TTL attribute to delete expired user`s sessions, but you noticed that some expired items still exist in queries you make. What should you do to resolve this problem?",
           answers: [
             "Do nothing, DynamoDB automatically delete expired items within 48 hours of the expiration",
             "This is a known bug in DynamoDB. Use a Lambda function to periodically delete the expired items",
@@ -3673,7 +3671,7 @@
         },
         {
           question:
-            "You have created a whole new API (v2) and you want to test it, but you're worried about shifting all the traffic to it. What is the recommended way to test it?",
+            "You have created a whole new API (v2) and you want to test it, but you`re worried about shifting all the traffic to it. What is the recommended way to test it?",
           answers: [
             "Create a whole new Stage, then use Route 53 to distribute traffic between your two Stages using a Weighted record (CNAME)",
             "Create a Canary release",
@@ -3698,7 +3696,7 @@
         },
         {
           question:
-            "You are running an API that's backed by a Lambda function. Your API receives a large number of GET requests which results in your Lambda function becomes overloaded and your bill starts to substantially increase. The response returns the same payload and changes once each day. What should you do to handle all these requests and reduce your bill?",
+            "You are running an API that`s backed by a Lambda function. Your API receives a large number of GET requests which results in your Lambda function becomes overloaded and your bill starts to substantially increase. The response returns the same payload and changes once each day. What should you do to handle all these requests and reduce your bill?",
           answers: [
             "Enable mock responses",
             "Integrate API Gateway with ElastiCache",
@@ -3732,7 +3730,7 @@
         },
         {
           question:
-            "You are serving a Machine Learning API through API Gateway to a number of customers that they're using in their applications. You offer this as a free service, but you plan to purchase each customer with paid plans. Which API Gateway feature allows you to do so?",
+            "You are serving a Machine Learning API through API Gateway to a number of customers that they`re using in their applications. You offer this as a free service, but you plan to purchase each customer with paid plans. Which API Gateway feature allows you to do so?",
           answers: [
             "Usage Plans & API Keys",
             "CORS",
@@ -3744,14 +3742,14 @@
         },
         {
           question:
-            "You have a Serverless application consists of an API Gateway, Lambda functions, and DynamoDB tables. Lately, users begin to complain that they receive exceptions in some requests. Also, there's a delay in some API calls. What should you use to troubleshoot and detect where the issues take place?",
+            "You have a Serverless application consists of an API Gateway, Lambda functions, and DynamoDB tables. Lately, users begin to complain that they receive exceptions in some requests. Also, there`s a delay in some API calls. What should you use to troubleshoot and detect where the issues take place?",
           answers: ["CloudWatch Logs", "CloudWatch Detailed Metrics", "X-Ray"],
           right_answer: "X-Ray",
           theme: "Correct Answer",
         },
         {
           question:
-            "You have an API that's consumed by a large number of users from different domains. You need to ....................",
+            "You have an API that`s consumed by a large number of users from different domains. You need to ....................",
           answers: [
             "Deploy a new Stage for each user",
             "Enable CORS",
@@ -3824,13 +3822,13 @@
         },
         {
           question:
-            "You just accepted a new role as an AWS Developer in a new company. Your tech lead gives you a bunch of CloudFormation templates to review. One of the templates starts with the followingTransform: 'AWS::Serverless-2016-10-31'. What does this represent?",
+            "You just accepted a new role as an AWS Developer in a new company. Your tech lead gives you a bunch of CloudFormation templates to review. One of the templates starts with the followingTransform: `AWS::Serverless-2016-10-31`. What does this represent?",
           answers: [
-            "It's an Intrinsic function",
-            "It's a Lambda function definition",
-            "It's a SAM template",
+            "It`s an Intrinsic function",
+            "It`s a Lambda function definition",
+            "It`s a SAM template",
           ],
-          right_answer: "It's a SAM template",
+          right_answer: "It`s a SAM template",
           theme: "Correct Answer",
         },
         {
@@ -3882,7 +3880,7 @@
         },
         {
           question:
-            "You want to create your infrastructure in AWS using code, but you don't have time to learn JSON or YAML to write a CloudFormation template. You already know Python. Which AWS service can help you?",
+            "You want to create your infrastructure in AWS using code, but you don`t have time to learn JSON or YAML to write a CloudFormation template. You already know Python. Which AWS service can help you?",
           answers: [
             "Amazon S3",
             "AWS CDK",
@@ -3930,7 +3928,7 @@
         },
         {
           question:
-            "You have an application that uses Cognito User Pools to authenticate its users. There's a requirement to log every successful login into Cognito in an RDS DB instance to keep website & users' activity for further analysis. What should you do?",
+            "You have an application that uses Cognito User Pools to authenticate its users. There`s a requirement to log every successful login into Cognito in an RDS DB instance to keep website & users` activity for further analysis. What should you do?",
           answers: [
             "Enable the Cognito & RDS integration",
             "Write a Pre-Authentication hook with Lambda",
@@ -4013,9 +4011,9 @@
           question:
             "You have a Step Functions workflow which consists of a series of Task States invoking a set of Lambda functions. While execution, one of the states has an error with the following error codeStates.Permissions. How do you solve this problem?",
           answers: [
-            "There's an execution failure in the Lambda function invoked by this Task State",
+            "There`s an execution failure in the Lambda function invoked by this Task State",
             "You need to give the Step Functions workflow the required IAM permissions to execute the Lambda function invoked by this Task State",
-            "The Task State runs longer than theTimeoutSecondsvalue and it's failed",
+            "The Task State runs longer than theTimeoutSecondsvalue and it`s failed",
           ],
           right_answer:
             "You need to give the Step Functions workflow the required IAM permissions to execute the Lambda function invoked by this Task State",
@@ -4064,7 +4062,7 @@
             "The EC2 instance is using cached temporary IAM credentials",
             "The IAM credentials are cached in the EC2 instance, removing an IAM role from an EC2 instance can take a few minutes to take effect",
             "The S3 bucket policy authorizes reads",
-            "When a read is done on a bucket, there's a grace period of 5 minutes to do the same read again",
+            "When a read is done on a bucket, there`s a grace period of 5 minutes to do the same read again",
           ],
           right_answer: "The S3 bucket policy authorizes reads",
           theme: "Correct Answer",
@@ -4153,11 +4151,11 @@
         },
         {
           question:
-            "You have an AMI that has an encrypted EBS snapshot using KMS CMK. You want to share this AMI with another AWS account. You have shared the AMI with the desired AWS account, but the other AWS account still can't use it. How would you solve this problem?",
+            "You have an AMI that has an encrypted EBS snapshot using KMS CMK. You want to share this AMI with another AWS account. You have shared the AMI with the desired AWS account, but the other AWS account still can`t use it. How would you solve this problem?",
           answers: [
             "The other AWS account needs to logout and login again to refresh its credentials",
             "You need to share the KMS CMK used to encrypt the AMI with the other AWS account",
-            "You can't share an AMI that has an encrypted EBS snapshot",
+            "You can`t share an AMI that has an encrypted EBS snapshot",
           ],
           right_answer:
             "You need to share the KMS CMK used to encrypt the AMI with the other AWS account",
@@ -4199,7 +4197,7 @@
         },
         {
           question:
-            "You would like to externally maintain the configuration values of your main database, to be picked up at runtime by your application. What's the best place to store them to maintain control and version history?",
+            "You would like to externally maintain the configuration values of your main database, to be picked up at runtime by your application. What`s the best place to store them to maintain control and version history?",
           answers: [
             "Amazon DynamoDB",
             "SSM Parameter Store",
@@ -4232,7 +4230,7 @@
         },
         {
           question:
-            "You have critical data stored in an S3 bucket withSSE:KMSencryption enabled. You're running an application on an EC2 instance in which you want to download some files from the bucket. So, you have created an IAM role withs3:GetObjectpermissions and attached it to the EC2 instance, but when the application tries to download files from the S3 bucket, it gets a denied exception. What is a possible cause for this issue?",
+            "You have critical data stored in an S3 bucket withSSE:KMSencryption enabled. You`re running an application on an EC2 instance in which you want to download some files from the bucket. So, you have created an IAM role withs3:GetObjectpermissions and attached it to the EC2 instance, but when the application tries to download files from the S3 bucket, it gets a denied exception. What is a possible cause for this issue?",
           answers: [
             "Add an S3 bucket policy",
             "Add permission forKMS:Decrypt",
